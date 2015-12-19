@@ -42,7 +42,7 @@ conv_layer = Convolution1D(input_dim=4,
 
 conv_weights = conv_layer.get_weights()
 
-JASPAR_motifs = list(np.load('/home/dxquang/motif_databases/JASPAR/JASPAR_CORE_2016_vertebrates.npy'))
+JASPAR_motifs = list(np.load('JASPAR_CORE_2016_vertebrates.npy'))
 
 reverse_motifs = [JASPAR_motifs[19][::-1,::-1], JASPAR_motifs[97][::-1,::-1], JASPAR_motifs[98][::-1,::-1], JASPAR_motifs[99][::-1,::-1], JASPAR_motifs[100][::-1,::-1], JASPAR_motifs[101][::-1,::-1]]
 JASPAR_motifs = JASPAR_motifs + reverse_motifs
