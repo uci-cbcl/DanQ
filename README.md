@@ -2,6 +2,8 @@ README for DanQ
 ===============
 DanQ is a hybrid convolutional and recurrent neural network model for predicting the function of DNA *de novo* from sequence. 
 
+Please excuse how incomplete everything is. It's Winter break now, and it's hard for me to write a paper, spend quality family, catch up on Netflix, etc. all at the same time. But, it will be done!
+
 Citing DanQ
 ===========
 Quang, D. and Xie, X. ``DanQ: a hybrid convolutional and recurrent neural network for predicting the function of DNA sequences'', *Under review*, 2015.
