@@ -79,7 +79,7 @@ model.compile(loss='binary_crossentropy', optimizer='rmsprop', class_mode="binar
 
 print 'running at most 32 epochs'
 
-checkpointer = ModelCheckpoint(filepath="DeepSEA_BLSTM_flatten_compare_JASPARBigger_bestmodel.hdf5", verbose=1, save_best_only=True)
+checkpointer = ModelCheckpoint(filepath="DanQ-JASPAR_bestmodel.hdf5", verbose=1, save_best_only=True)
 earlystopper = EarlyStopping(monitor='val_loss', patience=100, verbose=1)
 
 model.fit(X_train, y_train, batch_size=100, nb_epoch=32, shuffle=True, show_accuracy=True, validation_data=(np.transpose(validmat['validxdata'],axes=(0,2,1)), validmat['validdata']), callbacks=[checkpointer,earlystopper])
