@@ -17,9 +17,9 @@ from keras.utils.layer_utils import print_layer_shapes
 
 
 print 'loading data'
-trainmat = h5py.File('/home/dxquang/deepsea_train/train.mat')
-validmat = scipy.io.loadmat('/home/dxquang/deepsea_train/valid.mat')
-testmat = scipy.io.loadmat('/home/dxquang/deepsea_train/test.mat')
+trainmat = h5py.File('data/train.mat')
+validmat = scipy.io.loadmat('data/valid.mat')
+testmat = scipy.io.loadmat('data/test.mat')
 
 X_train = np.transpose(np.array(trainmat['trainxdata']),axes=(2,0,1))
 y_train = np.array(trainmat['traindata']).T
