@@ -59,10 +59,13 @@ $ python DanQ-JASPAR_train.py
 
 Weights are saved to the fight [DanQ-JASPAR_bestmodel.hdf5] (https://cbcl.ics.uci.edu/public_data/DanQ/DanQ-JASPAR_bestmodel.hdf5) whenever the validation loss is lowered. Motif results for this model are also stored in the motifs/ folder.
 
+For your convenience, I've posted the current ROC AUC and PR AUC statistics comparing DanQ and DanQ-JASPAR with DeepSEA.
+
 To-Do
 =====
 
 * Predict on FASTA sequences
 * Annotate genetic variation
+* Improve DanQ architecture
 
 
