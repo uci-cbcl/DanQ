@@ -29,8 +29,9 @@ $ python setup.py develop
 * [seya] (https://github.com/EderSantana/seya) (???). I had to modify the source code of this package a little bit. You can try getting the latest version from Github, but for your convenience I've uploaded my copy of the package. You can install it as follows:
 
 ```
-cd DanQ_seya
-python setup.py install
+$ tar zxvf DanQ_seya.tar.gz
+$ cd DanQ_seya
+$ python setup.py install
 ``` 
 
 I will likely improve DanQ soon and drop the dependency on seya.
