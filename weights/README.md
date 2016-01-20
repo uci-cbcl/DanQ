@@ -1,0 +1,1 @@
+Put .hdf5 weight files here. You can download weights for the [DanQ] (https://cbcl.ics.uci.edu/public_data/DanQ/DanQ_bestmodel.hdf5) and [DanQ-JASPAR] (https://cbcl.ics.uci.edu/public_data/DanQ/DanQ-JASPAR_bestmodel.hdf5) models.
