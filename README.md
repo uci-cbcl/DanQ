@@ -61,6 +61,8 @@ Weights are saved to the fight [DanQ-JASPAR_bestmodel.hdf5] (https://cbcl.ics.uc
 
 For your convenience, I've posted the current ROC AUC and PR AUC statistics comparing DanQ and DanQ-JASPAR with DeepSEA.
 
+If you do not
+
 To-Do
 =====
 
