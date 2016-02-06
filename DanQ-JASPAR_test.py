@@ -55,10 +55,10 @@ print 'loading test data'
 testmat = scipy.io.loadmat('data/test.mat')
 x = np.transpose(testmat['testxdata'],axes=(0,2,1))
 
-print 'predicting on test sequences"
+print 'predicting on test sequences'
 y = model.predict(x)
 
-print 'saving predictions to testmat_DanQ-JASPAR_predictions.hdf5"
+print 'saving predictions to testmat_DanQ-JASPAR_predictions.hdf5'
 f = h5py.File("testmat_DanQ-JASPAR_predictions.hdf5", "w")
 f.create_dataset("pred", data=y)
 f.close()
