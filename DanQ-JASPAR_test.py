@@ -49,16 +49,17 @@ print 'compiling model'
 model.compile(loss='binary_crossentropy', optimizer='rmsprop', class_mode="binary")
 
 
-model.load_weights('weights/DanQ-JASPAR_bestmodel.hdf5')
+model.load_weights('/media/data/dxquang/DanQ/DanQ-JASPAR_bestmodel.hdf5')
 
 print 'loading test data'
-testmat = scipy.io.loadmat('data/test.mat')
-x = np.transpose(testmat['testxdata'],axes=(0,2,1))
+testmat = h5py.File(sys.argv[1],'r')
+x = np.transpose(testmat['testxdata'].value,axes=(0,2,1))
+testmat.close()
 
 print 'predicting on test sequences'
-y = model.predict(x)
+y = model.predict(x, verbose=1)
 
-print 'saving predictions to testmat_DanQ-JASPAR_predictions.hdf5'
-f = h5py.File("testmat_DanQ-JASPAR_predictions.hdf5", "w")
+print "saving to " + sys.argv[2]
+f = h5py.File(sys.argv[2], "w")
 f.create_dataset("pred", data=y)
 f.close()
