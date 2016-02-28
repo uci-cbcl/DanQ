@@ -61,14 +61,17 @@ Weights are saved to the fight [DanQ-JASPAR_bestmodel.hdf5] (https://cbcl.ics.uc
 
 For your convenience, I've posted the current ROC AUC and PR AUC statistics comparing DanQ and DanQ-JASPAR with DeepSEA.
 
-If you do not
+If you do not want to train a model from scratch and just want to do predictions, I've included test scripts for both models and the file example.h5 in the data folder. This is the same hdf5 file that is generated using the example from the DeepSEA package. The test scripts here have the same input and output formats as the prediction script from DeepSEA, so you can replace the prediction step of the DeepSEA pipeline (i.e. the 2_DeepSEA.lua script) with the test scripts here:
+
+```
+$ python DanQ_test.py data/example.h5 data/example_DanQ_pred.h5
+```
+
 
 To-Do
 =====
 
-* Predict on hdf5 files
-* Predict on FASTA sequences
-* Annotate genetic variation
+* Annotate genetic variation (xgboost model files are currently included, but not detailed at the moment)
 * Improve DanQ architecture
 
 

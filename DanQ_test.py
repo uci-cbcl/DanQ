@@ -51,7 +51,7 @@ print 'compiling model'
 model.compile(loss='binary_crossentropy', optimizer='rmsprop', class_mode="binary")
 
 
-model.load_weights('/media/data/dxquang/DanQ/DanQ_bestmodel.hdf5')
+model.load_weights('data/DanQ_bestmodel.hdf5')
 
 print 'loading test data'
 testmat = h5py.File(sys.argv[1],'r')
