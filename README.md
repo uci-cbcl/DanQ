@@ -4,7 +4,7 @@ DanQ is a hybrid convolutional and recurrent neural network model for predicting
 
 Citing DanQ
 ===========
-Quang, D. and Xie, X. ``DanQ: a hybrid convolutional and recurrent neural network for predicting the function of DNA sequences'', *Under review*, 2015.
+Quang, D. and Xie, X. ``DanQ: a hybrid convolutional and recurrent neural network for predicting the function of DNA sequences'', NAR, 2015.
 
 INSTALL
 =======
